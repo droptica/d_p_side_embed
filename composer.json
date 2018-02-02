@@ -1,0 +1,11 @@
+{
+    "name": "droptica/d_p_side_embed",
+    "description": "Droopler paragraph containing side embed.",
+    "type": "drupal-module",
+    "license": "GPL-2.0+",
+    "homepage": "https://github.com/droptica/d_p_side_embed",
+    "keywords": ["drupal", "droopler", "paragraph", "embed"],
+    "require": {
+      "droptica/droopler": "dev-feature/new-paragraphs || dev-develop"
+    }
+}
