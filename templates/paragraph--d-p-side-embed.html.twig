@@ -47,8 +47,8 @@ view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
 ] %}
 {% block paragraph %}
   <div{{ attributes.addClass(classes) }}>
-    <div class="clearfix d-p-side-embed-wrapper row embed-side-{{ tiles_side }}">
-      <div class="d-p-side-embed-images col-md-6"">
+    <div class="clearfix d-p-side-embed-wrapper row embed-side-{{ embed_side }}">
+      <div class="d-p-side-embed-embed col-md-6">
         {{ content.field_d_embed }}
       </div>
       <div class="d-p-side-embed-content col-md-6">

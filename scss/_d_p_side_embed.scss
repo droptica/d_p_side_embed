@@ -17,6 +17,7 @@ $d-p-side-embed-overlay-opacity: 0.6 !default;
 // Margins, paddings and sizing.
 $d-p-side-embed-line-margin-top: 1.44rem !default;
 $d-p-side-embed-line-margin-bottom: 1.44rem !default;
+$d-p-side-embed-fields-padding-y: 7% !default;
 $d-p-side-embed-mobile-height: 18.75rem !default;
 $d-p-side-embed-banner-text-desktop-padding-y: 2rem !default;
 $d-p-side-embed-banner-text-mobile-padding-y: 7% !default;
@@ -25,7 +26,6 @@ $d-p-side-embed-banner-half-padding: 5% !default; // Spacing between content and
 
 .d-p-side-embed-wrapper {
   background-color: $d-p-side-embed-banner-text-background-color;
-
 
   .d-p-side-embed-content {
     color: $d-p-side-embed-banner-text-color;
@@ -55,7 +55,6 @@ $d-p-side-embed-banner-half-padding: 5% !default; // Spacing between content and
   .d-p-side-embed-embed {
     padding-left: 0;
     padding-right: 0;
-
   }
 
   @include media-breakpoint-down(md) {
@@ -74,6 +73,8 @@ $d-p-side-embed-banner-half-padding: 5% !default; // Spacing between content and
 
       .d-p-side-embed-content-fields {
         width: 430px;
+        padding-top: $d-p-side-embed-fields-padding-y;
+        padding-bottom: $d-p-side-embed-fields-padding-y;
       }
     }
     &.embed-side {
