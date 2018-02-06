@@ -14,10 +14,18 @@ function d_p_side_embed_preprocess_paragraph(&$variables) {
 
   switch ($bundle) {
     case 'd_p_side_embed':
+      // Process embed side.
       $field_embed_side = $paragraph->get('field_d_p_se_embed_side')->get(0);
       if ($field_embed_side) {
         $embed_side = $field_embed_side->getValue();
         $variables['embed_side'] = $embed_side['value'];
+      }
+
+      // Process embed code.
+      $field_embed = $paragraph->get('field_d_embed')->get(0);
+      if ($field_embed) {
+        $embed = $field_embed->getValue();
+        $variables['embed'] = $embed['value'];
       }
       break;
   }
